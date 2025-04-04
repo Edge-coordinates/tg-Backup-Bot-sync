@@ -1,0 +1,44 @@
+{
+  "message_id": 940,
+  "from": {
+    "id": 7360969276,
+    "is_bot": true,
+    "first_name": "edge-message-manager",
+    "username": "edge_message_manager_bot"
+  },
+  "chat": {
+    "id": -4733128251,
+    "title": "test-tmp-1",
+    "type": "group",
+    "all_members_are_administrators": true
+  },
+  "date": 1743759782,
+  "forward_origin": {
+    "type": "user",
+    "sender_user": {
+      "id": 5050431898,
+      "is_bot": false,
+      "first_name": "边缘坐标",
+      "last_name": "🎉♪⸜(๑ ॑꒳ ॑๑)⸝♪🎆",
+      "username": "Edgecoordinates",
+      "language_code": "zh-hans"
+    },
+    "date": 1740730867
+  },
+  "forward_from": {
+    "id": 5050431898,
+    "is_bot": false,
+    "first_name": "边缘坐标",
+    "last_name": "🎉♪⸜(๑ ॑꒳ ॑๑)⸝♪🎆",
+    "username": "Edgecoordinates",
+    "language_code": "zh-hans"
+  },
+  "forward_date": 1740730867,
+  "document": {
+    "file_name": "参数.txt",
+    "mime_type": "text/plain",
+    "file_id": "BQACAgUAAx0CY6qq_QACqVln76R73pdav-g3UgKJP9RhW1sD0gAC_xMAAmCqEFYZRuhG20XBdjYE",
+    "file_unique_id": "AgAD_xMAAmCqEFY",
+    "file_size": 1152
+  }
+}

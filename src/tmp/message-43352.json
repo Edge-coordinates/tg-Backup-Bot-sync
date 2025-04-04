@@ -1,0 +1,105 @@
+{
+  "message_id": 937,
+  "from": {
+    "id": 7360969276,
+    "is_bot": true,
+    "first_name": "edge-message-manager",
+    "username": "edge_message_manager_bot"
+  },
+  "chat": {
+    "id": -4733128251,
+    "title": "test-tmp-1",
+    "type": "group",
+    "all_members_are_administrators": true
+  },
+  "date": 1743759777,
+  "forward_origin": {
+    "type": "channel",
+    "chat": {
+      "id": -1001875265859,
+      "title": "世界尽头のWasteland",
+      "type": "channel"
+    },
+    "message_id": 8263,
+    "author_signature": "边缘坐标 🎉♪⸜(๑ ॑꒳ ॑๑)⸝♪🎆",
+    "date": 1740730848
+  },
+  "forward_from_chat": {
+    "id": -1001875265859,
+    "title": "世界尽头のWasteland",
+    "type": "channel"
+  },
+  "forward_from_message_id": 8263,
+  "forward_signature": "边缘坐标 🎉♪⸜(๑ ॑꒳ ॑๑)⸝♪🎆",
+  "forward_date": 1740730848,
+  "photo": [
+    {
+      "file_id": "AgACAgUAAx0CY6qq_QACqVhn76R6rQm5KzoVQeqvXiPhecq4jgACccAxG5XOCFZCT6JbadRfrwEAAwIAA3MAAzYE",
+      "file_unique_id": "AQADccAxG5XOCFZ4",
+      "file_size": 1442,
+      "width": 47,
+      "height": 90
+    },
+    {
+      "file_id": "AgACAgUAAx0CY6qq_QACqVhn76R6rQm5KzoVQeqvXiPhecq4jgACccAxG5XOCFZCT6JbadRfrwEAAwIAA20AAzYE",
+      "file_unique_id": "AQADccAxG5XOCFZy",
+      "file_size": 21315,
+      "width": 166,
+      "height": 320
+    },
+    {
+      "file_id": "AgACAgUAAx0CY6qq_QACqVhn76R6rQm5KzoVQeqvXiPhecq4jgACccAxG5XOCFZCT6JbadRfrwEAAwIAA3gAAzYE",
+      "file_unique_id": "AQADccAxG5XOCFZ9",
+      "file_size": 95713,
+      "width": 416,
+      "height": 800
+    },
+    {
+      "file_id": "AgACAgUAAx0CY6qq_QACqVhn76R6rQm5KzoVQeqvXiPhecq4jgACccAxG5XOCFZCT6JbadRfrwEAAwIAA3kAAzYE",
+      "file_unique_id": "AQADccAxG5XOCFZ-",
+      "file_size": 201123,
+      "width": 666,
+      "height": 1280
+    },
+    {
+      "file_id": "AgACAgUAAx0CY6qq_QACqVhn76R6rQm5KzoVQeqvXiPhecq4jgACccAxG5XOCFZCT6JbadRfrwEAAwIAA3cAAzYE",
+      "file_unique_id": "AQADccAxG5XOCFZ8",
+      "file_size": 363160,
+      "width": 1040,
+      "height": 2000
+    }
+  ],
+  "caption": "这一张真心喜欢\n\n#美图 #AI #瞳 #思考 #可爱 \n#炼丹",
+  "caption_entities": [
+    {
+      "offset": 9,
+      "length": 3,
+      "type": "hashtag"
+    },
+    {
+      "offset": 13,
+      "length": 3,
+      "type": "hashtag"
+    },
+    {
+      "offset": 17,
+      "length": 2,
+      "type": "hashtag"
+    },
+    {
+      "offset": 20,
+      "length": 3,
+      "type": "hashtag"
+    },
+    {
+      "offset": 24,
+      "length": 3,
+      "type": "hashtag"
+    },
+    {
+      "offset": 29,
+      "length": 3,
+      "type": "hashtag"
+    }
+  ]
+}

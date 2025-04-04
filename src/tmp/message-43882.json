@@ -1,0 +1,45 @@
+{
+  "message_id": 278,
+  "from": {
+    "id": 7360969276,
+    "is_bot": true,
+    "first_name": "edge-message-manager",
+    "username": "edge_message_manager_bot"
+  },
+  "chat": {
+    "id": -4651678453,
+    "title": "test-group",
+    "type": "group",
+    "all_members_are_administrators": true
+  },
+  "date": 1743744950,
+  "forward_origin": {
+    "type": "hidden_user",
+    "sender_user_name": "Ghëescoo Chen",
+    "date": 1743328025
+  },
+  "forward_sender_name": "Ghëescoo Chen",
+  "forward_date": 1743328025,
+  "document": {
+    "file_name": "Screenshot from 2025-03-30 17-44-16.png",
+    "mime_type": "image/png",
+    "thumbnail": {
+      "file_id": "AAMCBQADHQJjqqr9AAKramfvb7VV-Un4bbVOyzxoKwvCFjdFAALWFAACFFJIV_tFiGSwH5zXAQAHbQADNgQ",
+      "file_unique_id": "AQAD1hQAAhRSSFdy",
+      "file_size": 17276,
+      "width": 320,
+      "height": 254
+    },
+    "thumb": {
+      "file_id": "AAMCBQADHQJjqqr9AAKramfvb7VV-Un4bbVOyzxoKwvCFjdFAALWFAACFFJIV_tFiGSwH5zXAQAHbQADNgQ",
+      "file_unique_id": "AQAD1hQAAhRSSFdy",
+      "file_size": 17276,
+      "width": 320,
+      "height": 254
+    },
+    "file_id": "BQACAgUAAx0CY6qq_QACq2pn72-1VflJ-G21Tss8aCsLwhY3RQAC1hQAAhRSSFf7RYhksB-c1zYE",
+    "file_unique_id": "AgAD1hQAAhRSSFc",
+    "file_size": 1111691
+  },
+  "caption": "有些想念skype，5月就要換成teams了。我還記得拉羣聊用copilot的日子。不知道teams打電話有多方便"
+}

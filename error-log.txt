@@ -1,0 +1,24 @@
+Error occurred: GrammyError in middleware: Call to 'forwardMessage' failed! (400: Bad Request: chat_id is empty)
+Message link: https://t.me/c/1672129277/43884
+
+Error occurred: GrammyError in middleware: Call to 'forwardMessage' failed! (400: Bad Request: chat_id is empty)
+Message link: https://t.me/c/1672129277/43884
+
+Error occurred: GrammyError in middleware: Call to 'sendMediaGroup' failed! (400: Bad Request: there are no messages to send)
+Message link: https://t.me/c/1672129277/43363
+
+Error occurred: GrammyError in middleware: Call to 'sendMediaGroup' failed! (400: Bad Request: there are no messages to send)
+Message link: https://t.me/c/1672129277/43363
+
+Error occurred: GrammyError in middleware: Call to 'forwardMessage' failed! (400: Bad Request: chat not found)
+Message link: https://t.me/c/2673368714/2
+
+Error occurred: GrammyError in middleware: Call to 'forwardMessage' failed! (400: Bad Request: the message can't be forwarded)
+Message link: https://t.me/c/2673368714/2
+
+Error occurred: GrammyError in middleware: Call to 'forwardMessage' failed! (400: Bad Request: the message can't be forwarded)
+Message link: https://t.me/c/2673368714/2
+
+Error occurred: HttpError in middleware: Network request for 'sendMessage' failed!
+Message link: https://t.me/c/2673368714/20
+

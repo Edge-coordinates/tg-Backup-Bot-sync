@@ -1,0 +1,49 @@
+{
+  "message_id": 941,
+  "from": {
+    "id": 7360969276,
+    "is_bot": true,
+    "first_name": "edge-message-manager",
+    "username": "edge_message_manager_bot"
+  },
+  "chat": {
+    "id": -4733128251,
+    "title": "test-tmp-1",
+    "type": "group",
+    "all_members_are_administrators": true
+  },
+  "date": 1743759783,
+  "forward_origin": {
+    "type": "hidden_user",
+    "sender_user_name": "Deleted Account",
+    "date": 1740745351
+  },
+  "forward_sender_name": "Deleted Account",
+  "forward_date": 1740745351,
+  "sticker": {
+    "width": 512,
+    "height": 505,
+    "emoji": "😁",
+    "set_name": "dubolaiwan",
+    "is_animated": false,
+    "is_video": false,
+    "type": "regular",
+    "thumbnail": {
+      "file_id": "AAMCBQADHQJjqqr9AAKpWmfvpH4bb53r55ppYkMLaiycsjp3AAKjDQACf7_xVhxDcRbXaoseAQAHbQADNgQ",
+      "file_unique_id": "AQADow0AAn-_8VZy",
+      "file_size": 9862,
+      "width": 320,
+      "height": 316
+    },
+    "thumb": {
+      "file_id": "AAMCBQADHQJjqqr9AAKpWmfvpH4bb53r55ppYkMLaiycsjp3AAKjDQACf7_xVhxDcRbXaoseAQAHbQADNgQ",
+      "file_unique_id": "AQADow0AAn-_8VZy",
+      "file_size": 9862,
+      "width": 320,
+      "height": 316
+    },
+    "file_id": "CAACAgUAAx0CY6qq_QACqVpn76R-G2-d6-eaaWJDC2osnLI6dwACow0AAn-_8VYcQ3EW12qLHjYE",
+    "file_unique_id": "AgADow0AAn-_8VY",
+    "file_size": 15250
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "_": "message",
+  "flags": 1796,
+  "out": false,
+  "mentioned": false,
+  "media_unread": false,
+  "silent": false,
+  "post": false,
+  "from_scheduled": false,
+  "legacy": false,
+  "edit_hide": false,
+  "pinned": false,
+  "noforwards": false,
+  "invert_media": false,
+  "flags2": 0,
+  "offline": false,
+  "video_processing_pending": false,
+  "id": 47058,
+  "from_id": {
+    "_": "peerUser",
+    "user_id": -1228965316
+  },
+  "peer_id": {
+    "_": "peerChat",
+    "chat_id": 4651678453
+  },
+  "fwd_from": {
+    "_": "messageFwdHeader",
+    "flags": 13,
+    "imported": false,
+    "saved_out": false,
+    "from_id": {
+      "_": "peerChannel",
+      "channel_id": 1875265859
+    },
+    "date": 1739159427,
+    "channel_post": 8186,
+    "post_author": "边缘坐标 🎉♪⸜(๑ ॑꒳ ॑๑)⸝♪🎆"
+  },
+  "date": 1743697346,
+  "message": "",
+  "media": {
+    "_": "messageMediaPhoto",
+    "flags": 1,
+    "spoiler": false,
+    "photo": {
+      "_": "photo",
+      "flags": 0,
+      "has_stickers": false,
+      "id": 6145280035532162234,
+      "access_hash": -1367818148,
+      "file_reference": "AQAAt9Jn7rXSdfAaFKSddUvU9mjcCgz0/A==",
+      "date": 1739159030,
+      "sizes": [
+        {
+          "_": "photoStrippedSize",
+          "type": "i",
+          "bytes": "ASgX1WY4yOBTRzzuzVc+ZnDPx245qWNNkYoGrjmJHKj9aKQ9eKKRRUZ2Vg7dRy3vVyKONj5yAjeMn3qCZN6HANSRZCqiEqMY6dKpmabEn3ow2JkH3oqSVA3TOfWikWpCnaAN2Oe1OjXGTj6UUUEdRsjKWwDyOtFFFA7H"
+        },
+        {
+          "_": "photoSize",
+          "type": "m",
+          "w": 183,
+          "h": 320,
+          "size": 24892
+        },
+        {
+          "_": "photoSize",
+          "type": "x",
+          "w": 457,
+          "h": 800,
+          "size": 124373
+        },
+        {
+          "_": "photoSizeProgressive",
+          "type": "y",
+          "w": 686,
+          "h": 1200,
+          "sizes": [13843, 45746, 91484, 133340, 209292]
+        }
+      ],
+      "dc_id": 5
+    }
+  },
+  "views": 859,
+  "forwards": 12
+}

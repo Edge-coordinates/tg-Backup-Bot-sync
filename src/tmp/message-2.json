@@ -1,0 +1,70 @@
+{
+  "message_id": 338,
+  "from": {
+    "id": 7360969276,
+    "is_bot": true,
+    "first_name": "edge-message-manager",
+    "username": "edge_message_manager_bot"
+  },
+  "chat": {
+    "id": -4651678453,
+    "title": "test-group",
+    "type": "group",
+    "all_members_are_administrators": true
+  },
+  "date": 1743747002,
+  "forward_origin": {
+    "type": "user",
+    "sender_user": {
+      "id": 6332881098,
+      "is_bot": false,
+      "first_name": "Myth Epic",
+      "username": "mythepic"
+    },
+    "date": 1743746128
+  },
+  "forward_from": {
+    "id": 6332881098,
+    "is_bot": false,
+    "first_name": "Myth Epic",
+    "username": "mythepic"
+  },
+  "forward_date": 1743746128,
+  "photo": [
+    {
+      "file_id": "AgACAgQAAyEFAASfWF6KAAMCZ-90yLOOaTnGQg18GHNo6fVgu4cAAs7EMRtHb4FTfwjMZpaiYhIBAAMCAANzAAM2BA",
+      "file_unique_id": "AQADzsQxG0dvgVN4",
+      "file_size": 1784,
+      "width": 60,
+      "height": 90
+    },
+    {
+      "file_id": "AgACAgQAAyEFAASfWF6KAAMCZ-90yLOOaTnGQg18GHNo6fVgu4cAAs7EMRtHb4FTfwjMZpaiYhIBAAMCAANtAAM2BA",
+      "file_unique_id": "AQADzsQxG0dvgVNy",
+      "file_size": 32077,
+      "width": 214,
+      "height": 320
+    },
+    {
+      "file_id": "AgACAgQAAyEFAASfWF6KAAMCZ-90yLOOaTnGQg18GHNo6fVgu4cAAs7EMRtHb4FTfwjMZpaiYhIBAAMCAAN4AAM2BA",
+      "file_unique_id": "AQADzsQxG0dvgVN9",
+      "file_size": 148061,
+      "width": 535,
+      "height": 800
+    },
+    {
+      "file_id": "AgACAgQAAyEFAASfWF6KAAMCZ-90yLOOaTnGQg18GHNo6fVgu4cAAs7EMRtHb4FTfwjMZpaiYhIBAAMCAAN5AAM2BA",
+      "file_unique_id": "AQADzsQxG0dvgVN-",
+      "file_size": 323159,
+      "width": 856,
+      "height": 1280
+    },
+    {
+      "file_id": "AgACAgQAAyEFAASfWF6KAAMCZ-90yLOOaTnGQg18GHNo6fVgu4cAAs7EMRtHb4FTfwjMZpaiYhIBAAMCAAN3AAM2BA",
+      "file_unique_id": "AQADzsQxG0dvgVN8",
+      "file_size": 857536,
+      "width": 1713,
+      "height": 2560
+    }
+  ]
+}

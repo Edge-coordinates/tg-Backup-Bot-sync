@@ -1,0 +1,88 @@
+{
+  "message_id": 335,
+  "from": {
+    "id": 7360969276,
+    "is_bot": true,
+    "first_name": "edge-message-manager",
+    "username": "edge_message_manager_bot"
+  },
+  "chat": {
+    "id": -4651678453,
+    "title": "test-group",
+    "type": "group",
+    "all_members_are_administrators": true
+  },
+  "date": 1743746949,
+  "forward_origin": {
+    "type": "channel",
+    "chat": {
+      "id": -1001875265859,
+      "title": "世界尽头のWasteland",
+      "type": "channel"
+    },
+    "message_id": 8418,
+    "author_signature": "边缘坐标 🎉♪⸜(๑ ॑꒳ ॑๑)⸝♪🎆",
+    "date": 1743338058
+  },
+  "forward_from_chat": {
+    "id": -1001875265859,
+    "title": "世界尽头のWasteland",
+    "type": "channel"
+  },
+  "forward_from_message_id": 8418,
+  "forward_signature": "边缘坐标 🎉♪⸜(๑ ॑꒳ ॑๑)⸝♪🎆",
+  "forward_date": 1743338058,
+  "photo": [
+    {
+      "file_id": "AgACAgUAAx0CY6qq_QACq2xn7sBMx0f0BnIVD3sRg-pZzK32FgACfsMxGzaoSFeBC0SVIMDl3QEAAwIAA3MAAzYE",
+      "file_unique_id": "AQADfsMxGzaoSFd4",
+      "file_size": 1248,
+      "width": 62,
+      "height": 90
+    },
+    {
+      "file_id": "AgACAgUAAx0CY6qq_QACq2xn7sBMx0f0BnIVD3sRg-pZzK32FgACfsMxGzaoSFeBC0SVIMDl3QEAAwIAA20AAzYE",
+      "file_unique_id": "AQADfsMxGzaoSFdy",
+      "file_size": 18181,
+      "width": 221,
+      "height": 320
+    },
+    {
+      "file_id": "AgACAgUAAx0CY6qq_QACq2xn7sBMx0f0BnIVD3sRg-pZzK32FgACfsMxGzaoSFeBC0SVIMDl3QEAAwIAA3gAAzYE",
+      "file_unique_id": "AQADfsMxGzaoSFd9",
+      "file_size": 76959,
+      "width": 552,
+      "height": 800
+    },
+    {
+      "file_id": "AgACAgUAAx0CY6qq_QACq2xn7sBMx0f0BnIVD3sRg-pZzK32FgACfsMxGzaoSFeBC0SVIMDl3QEAAwIAA3kAAzYE",
+      "file_unique_id": "AQADfsMxGzaoSFd-",
+      "file_size": 126928,
+      "width": 832,
+      "height": 1205
+    }
+  ],
+  "caption": "#每日の图 #小剧场 #百合 #典藏",
+  "caption_entities": [
+    {
+      "offset": 0,
+      "length": 5,
+      "type": "hashtag"
+    },
+    {
+      "offset": 6,
+      "length": 4,
+      "type": "hashtag"
+    },
+    {
+      "offset": 11,
+      "length": 3,
+      "type": "hashtag"
+    },
+    {
+      "offset": 15,
+      "length": 3,
+      "type": "hashtag"
+    }
+  ]
+}

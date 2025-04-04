@@ -1,0 +1,86 @@
+{
+    "message_id": 58,
+    "from": {
+      "id": 7360969276,
+      "is_bot": true,
+      "first_name": "edge-message-manager",
+      "username": "edge_message_manager_bot"
+    },
+    "chat": {
+      "id": -4651678453,
+      "title": "test-group",
+      "type": "group",
+      "all_members_are_administrators": true
+    },
+    "date": 1743658620,
+    "forward_origin": {
+      "type": "channel",
+      "chat": { "id": -1001875265859, "title": "世界尽头のWasteland", "type": "channel" },
+      "message_id": 8185,
+      "author_signature": "边缘坐标 🎉♪⸜(๑ ॑꒳ ॑๑)⸝♪🎆",
+      "date": 1739159427
+    },
+    "forward_from_chat": { "id": -1001875265859, "title": "世界尽头のWasteland", "type": "channel" },
+    "forward_from_message_id": 8185,
+    "forward_signature": "边缘坐标 🎉♪⸜(๑ ॑꒳ ॑๑)⸝♪🎆",
+    "forward_date": 1739159427,
+    "photo": [
+      {
+        "file_id": "AgACAgUAAx0CY6qq_QACqAZn7h2_4MYm3uE-DC456AM-Ag9ItwACucQxG6JrSFVdTvOPQ6uS1wEAAwIAA3MAAzYE",
+        "file_unique_id": "AQADucQxG6JrSFV4",
+        "file_size": 1493,
+        "width": 51,
+        "height": 90
+      },
+      {
+        "file_id": "AgACAgUAAx0CY6qq_QACqAZn7h2_4MYm3uE-DC456AM-Ag9ItwACucQxG6JrSFVdTvOPQ6uS1wEAAwIAA20AAzYE",
+        "file_unique_id": "AQADucQxG6JrSFVy",
+        "file_size": 23953,
+        "width": 183,
+        "height": 320
+      },
+      {
+        "file_id": "AgACAgUAAx0CY6qq_QACqAZn7h2_4MYm3uE-DC456AM-Ag9ItwACucQxG6JrSFVdTvOPQ6uS1wEAAwIAA3gAAzYE",
+        "file_unique_id": "AQADucQxG6JrSFV9",
+        "file_size": 110768,
+        "width": 457,
+        "height": 800
+      },
+      {
+        "file_id": "AgACAgUAAx0CY6qq_QACqAZn7h2_4MYm3uE-DC456AM-Ag9ItwACucQxG6JrSFVdTvOPQ6uS1wEAAwIAA3cAAzYE",
+        "file_unique_id": "AQADucQxG6JrSFV8",
+        "file_size": 203438,
+        "width": 768,
+        "height": 1344
+      },
+      {
+        "file_id": "AgACAgUAAx0CY6qq_QACqAZn7h2_4MYm3uE-DC456AM-Ag9ItwACucQxG6JrSFVdTvOPQ6uS1wEAAwIAA3kAAzYE",
+        "file_unique_id": "AQADucQxG6JrSFV-",
+        "file_size": 232952,
+        "width": 731,
+        "height": 1280
+      }
+    ],
+    "caption": "https://twitter.com/yurari_banri/status/1886162520056250871\nhttps://twitter.com/yurari_banri/status/1882912763938283750\nhttps://twitter.com/yurari_banri/status/1887258436397892041\nhttps://twitter.com/yurari_banri/status/1887626050219421774\n万里ゆらり💎 :\n\n#天使 #眸 #白毛 #Yukata #美 #画师\n#每日の图 #组图",
+    "caption_entities": [
+      { "offset": 0, "length": 239, "type": "expandable_blockquote" },
+      { "offset": 0, "length": 59, "type": "url" },
+      { "offset": 60, "length": 59, "type": "url" },
+      { "offset": 120, "length": 59, "type": "url" },
+      { "offset": 180, "length": 59, "type": "url" },
+      {
+        "offset": 240,
+        "length": 7,
+        "type": "text_link",
+        "url": "https://twitter.com/yurari_banri"
+      },
+      { "offset": 251, "length": 3, "type": "hashtag" },
+      { "offset": 255, "length": 2, "type": "hashtag" },
+      { "offset": 258, "length": 3, "type": "hashtag" },
+      { "offset": 262, "length": 7, "type": "hashtag" },
+      { "offset": 270, "length": 2, "type": "hashtag" },
+      { "offset": 273, "length": 3, "type": "hashtag" },
+      { "offset": 277, "length": 5, "type": "hashtag" },
+      { "offset": 283, "length": 3, "type": "hashtag" }
+    ]
+  }

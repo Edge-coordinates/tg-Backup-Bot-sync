@@ -1,0 +1,169 @@
+{
+  "_": "message",
+  "flags": 1924,
+  "out": false,
+  "mentioned": false,
+  "media_unread": false,
+  "silent": false,
+  "post": false,
+  "from_scheduled": false,
+  "legacy": false,
+  "edit_hide": false,
+  "pinned": false,
+  "noforwards": false,
+  "invert_media": false,
+  "flags2": 0,
+  "offline": false,
+  "video_processing_pending": false,
+  "id": 47062,
+  "from_id": {
+    "_": "peerUser",
+    "user_id": -1228965316
+  },
+  "peer_id": {
+    "_": "peerChat",
+    "chat_id": 4651678453
+  },
+  "fwd_from": {
+    "_": "messageFwdHeader",
+    "flags": 13,
+    "imported": false,
+    "saved_out": false,
+    "from_id": {
+      "_": "peerChannel",
+      "channel_id": 1875265859
+    },
+    "date": 1739159427,
+    "channel_post": 8185,
+    "post_author": "边缘坐标 🎉♪⸜(๑ ॑꒳ ॑๑)⸝♪🎆"
+  },
+  "date": 1743697444,
+  "message": "https://twitter.com/yurari_banri/status/1886162520056250871\nhttps://twitter.com/yurari_banri/status/1882912763938283750\nhttps://twitter.com/yurari_banri/status/1887258436397892041\nhttps://twitter.com/yurari_banri/status/1887626050219421774\n万里ゆらり💎 :\n\n#天使 #眸 #白毛 #Yukata #美 #画师\n#每日の图 #组图",
+  "media": {
+    "_": "messageMediaPhoto",
+    "flags": 1,
+    "spoiler": false,
+    "photo": {
+      "_": "photo",
+      "flags": 0,
+      "has_stickers": false,
+      "id": 6145280035532162233,
+      "access_hash": -15446317,
+      "file_reference": "AQAAt9Zn7rYoOJWVIGkhIf/JcA3b3307AQ==",
+      "date": 1739159029,
+      "sizes": [
+        {
+          "_": "photoStrippedSize",
+          "type": "i",
+          "bytes": "ASgX2MjGe1Ju5HpTdwBx2pGbgdcHrjtQBIzBRmiox83A6daKYncRxnlWFIvEZ3/U0kA2oN5yxp7AknJ4xigEIHCCiqz2rtlhIGBOcdKKBPmGBkV8OgUjsOSKsxGQDe8o8v0I6UUUMEMdsg4jJQdBkAUUUVIz"
+        },
+        {
+          "_": "photoSize",
+          "type": "m",
+          "w": 183,
+          "h": 320,
+          "size": 23953
+        },
+        {
+          "_": "photoSize",
+          "type": "x",
+          "w": 457,
+          "h": 800,
+          "size": 110768
+        },
+        {
+          "_": "photoSize",
+          "type": "y",
+          "w": 731,
+          "h": 1280,
+          "size": 232952
+        },
+        {
+          "_": "photoSizeProgressive",
+          "type": "w",
+          "w": 768,
+          "h": 1344,
+          "sizes": [16058, 47512, 86930, 130221, 203438]
+        }
+      ],
+      "dc_id": 5
+    }
+  },
+  "entities": [
+    {
+      "_": "messageEntityBlockquote",
+      "flags": 1,
+      "collapsed": true,
+      "offset": 0,
+      "length": 239
+    },
+    {
+      "_": "messageEntityUrl",
+      "offset": 0,
+      "length": 59
+    },
+    {
+      "_": "messageEntityUrl",
+      "offset": 60,
+      "length": 59
+    },
+    {
+      "_": "messageEntityUrl",
+      "offset": 120,
+      "length": 59
+    },
+    {
+      "_": "messageEntityUrl",
+      "offset": 180,
+      "length": 59
+    },
+    {
+      "_": "messageEntityTextUrl",
+      "offset": 240,
+      "length": 7,
+      "url": "https://twitter.com/yurari_banri"
+    },
+    {
+      "_": "messageEntityHashtag",
+      "offset": 251,
+      "length": 3
+    },
+    {
+      "_": "messageEntityHashtag",
+      "offset": 255,
+      "length": 2
+    },
+    {
+      "_": "messageEntityHashtag",
+      "offset": 258,
+      "length": 3
+    },
+    {
+      "_": "messageEntityHashtag",
+      "offset": 262,
+      "length": 7
+    },
+    {
+      "_": "messageEntityHashtag",
+      "offset": 270,
+      "length": 2
+    },
+    {
+      "_": "messageEntityHashtag",
+      "offset": 273,
+      "length": 3
+    },
+    {
+      "_": "messageEntityHashtag",
+      "offset": 277,
+      "length": 5
+    },
+    {
+      "_": "messageEntityHashtag",
+      "offset": 283,
+      "length": 3
+    }
+  ],
+  "views": 820,
+  "forwards": 16
+}
