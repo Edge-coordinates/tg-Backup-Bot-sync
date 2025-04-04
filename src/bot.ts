@@ -12,15 +12,22 @@ import { registerCopyFileGroup } from "./handlers/copyFileGroup";
 import { registerCopyReplyGroup } from "./handlers/copyReplyGroup";
 import { registerBackupMethod } from "./handlers/mainBackupMethod";
 
-const socksAgent = new SocksProxyAgent("socks://127.0.0.1:7897");
+let baseFetchConfig : any = {compress: true}
+
+if (!process.env.Agent) {
+  const socksAgent = new SocksProxyAgent("socks://127.0.0.1:7897");
+  baseFetchConfig = {
+    agent: socksAgent,
+    compress: true,
+  }
+}
+
+
 
 // Create an instance of the `Bot` class and pass your bot token to it.
 const bot = new Bot(process.env.BOT_TOKEN!, {
   client: {
-    baseFetchConfig: {
-      agent: socksAgent,
-      compress: true,
-    },
+    baseFetchConfig: baseFetchConfig,
   },
 }); // <-- put your bot token between the ""
 
