@@ -1,9 +1,10 @@
 {
 	"scripts": {
-		"start": "powershell -Command \"$env:DEBUG='grammy*'; ts-node ./src/bot.ts\"",
+		"start": "cross-env DEBUG=grammy* ts-node ./src/bot.ts",
 		"dev": "nodemon --exec \"pnpm run start\""
 	},
 	"devDependencies": {
+		"cross-env": "^7.0.3",
 		"typescript": "^5.8.2"
 	},
 	"dependencies": {
