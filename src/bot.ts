@@ -14,7 +14,7 @@ import { registerBackupMethod } from "./handlers/mainBackupMethod";
 
 let baseFetchConfig : any = {compress: true}
 
-if (!process.env.Agent) {
+if (process.env.Agent) {
   const socksAgent = new SocksProxyAgent("socks://127.0.0.1:7897");
   baseFetchConfig = {
     agent: socksAgent,

@@ -76,11 +76,14 @@ export async function mainBackUpMethod(
       msg = await ctx.api.forwardMessage(tmpchatId, sourceChatId, messageId);
     } catch (error) {
       console.error(`forwardMessage error: ${error}`);
-      break;
     }
 
     if (!msg) {
-      BasicErrorLog(`forwardMessage error(msg is null): ${currentLink}`);
+      BasicErrorLog(
+        `forwardMessage error(msg is null): ${currentLink}\n`,
+        "error-log-local-backup.txt"
+      );
+      LookForReply = false;
       // # 更新 currentLink
       currentLink = getNextLink(currentLink);
       continue;
@@ -123,8 +126,6 @@ async function handleMessageByType(ctx: Context, msg: Message) {
     // * 媒体组
     // await ctx.reply("▶️ 正在转发媒体组 (photo/video)...");
     const mediaResult = await buildMediaGroupChainFrom(msg, currentLink, ctx);
-    // # 更新 currentLink
-    currentLink = mediaResult.nextMessageLink || getNextLink(currentLink);
     // console.log(mediaResult);
 
     // 媒体组签名
@@ -141,6 +142,8 @@ async function handleMessageByType(ctx: Context, msg: Message) {
     }
     appendToFirstCaption(mediaResult.group, source, "HTML");
 
+    // # 更新 currentLink
+    currentLink = mediaResult.nextMessageLink || getNextLink(currentLink);
     try {
       if (mediaResult.group.length > 0) {
         await ctx.api.sendMediaGroup(targetChannelID, mediaResult.group as any);
@@ -154,9 +157,6 @@ async function handleMessageByType(ctx: Context, msg: Message) {
     // * 文件组
     // await ctx.reply("📎 正在转发文件组...");
     const fileResult = await buildFileGroupChainFrom(msg, currentLink, ctx);
-
-    // # 更新 currentLink
-    currentLink = fileResult.nextMessageLink || getNextLink(currentLink);
 
     // 文件组签名
     let msgDate = messageMetaData(msg);
@@ -172,6 +172,8 @@ async function handleMessageByType(ctx: Context, msg: Message) {
     }
     appendToFirstCaption(fileResult.group, source, "HTML");
 
+    // # 更新 currentLink
+    currentLink = fileResult.nextMessageLink || getNextLink(currentLink);
     try {
       if (fileResult.group.length > 0) {
         await ctx.api.sendMediaGroup(targetChannelID, fileResult.group as any);
@@ -187,8 +189,6 @@ async function handleMessageByType(ctx: Context, msg: Message) {
       // 不保留原样式，但是大概影响不大
 
       const replyResult = await buildTextGroupChainFrom(msg, currentLink, ctx);
-      // # 更新 currentLink
-      currentLink = replyResult.nextMessageLink || getNextLink(currentLink);
 
       // 回复组签名
       let msgDate = messageMetaData(msg);
@@ -196,8 +196,11 @@ async function handleMessageByType(ctx: Context, msg: Message) {
         (msg as any).forward_from.first_name
       }\nsource: ${currentLink}\ntime: ${msgDate}`;
       let tmsg = buildTextMessageObject(replyResult.combinedText + source);
+
+      // # 更新 currentLink
+      currentLink = replyResult.nextMessageLink || getNextLink(currentLink);
       try {
-        await ctx.api.sendMessage(ctx.chat!.id, tmsg.text, {
+        await ctx.api.sendMessage(targetChannelID, tmsg.text, {
           parse_mode: tmsg.parse_mode,
         });
       } catch (error) {
@@ -211,6 +214,7 @@ async function handleMessageByType(ctx: Context, msg: Message) {
         (msg as any).forward_signature
       }`;
       const textMsg = buildFormattedTextMessage(msg.text, msg.entities, source);
+
       try {
         await ctx.api.sendMessage(targetChannelID, textMsg.text, {
           // parse_mode: "HTML",
