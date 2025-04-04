@@ -199,6 +199,7 @@ export function isTargetPersonalMessage(userID): boolean {
   return record_reply_user_id.includes(userID);
 }
 
+// ANCHOR 写入消息到文件
 export function writeMessageToFile(message: Message, messageId: number) {
   const fs = require("fs-extra");
   const path = require("path");

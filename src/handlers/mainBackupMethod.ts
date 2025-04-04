@@ -19,7 +19,7 @@ import { buildTextGroupChainFrom } from "../utils/buildReplyGroup";
 import { withAuth } from "../middleware/auth";
 import { BasicErrorLog } from "../utils/myLogger";
 import { writeMessageToFile } from "../utils/basicUtils";
-import { safeReply } from "../utils/safeReply";
+import { forwardMessageWithAutoRetry, safeReply } from "../utils/safeReply";
 const tmpchatId: any = process.env.tmpchatAId;
 
 export interface TextGroupResult {
@@ -74,7 +74,13 @@ export async function mainBackUpMethod(
 
     let msg: Message | null = null;
     try {
-      msg = await ctx.api.forwardMessage(tmpchatId, sourceChatId, messageId);
+      // msg = await ctx.api.forwardMessage(tmpchatId, sourceChatId, messageId);
+      msg = await forwardMessageWithAutoRetry(
+        ctx.api,
+        tmpchatId,
+        sourceChatId,
+        messageId
+      );
     } catch (error) {
       console.error(`forwardMessage error: ${error}`);
     }

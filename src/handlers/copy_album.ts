@@ -11,6 +11,7 @@ import {
 } from "../utils/basicUtils";
 
 import { withAuth } from "../middleware/auth";
+import { forwardMessageWithAutoRetry } from "../utils/safeReply";
 
 export function registerCopyAlbum(bot: Bot) {
   bot.command(
@@ -42,7 +43,9 @@ export async function copyAlbum(ctx: Context) {
   // 用 forwardMessage 获取 media_group_id（Bot API 无 getMessage）
   let fwd: Message;
   try {
-    fwd = await ctx.api.forwardMessage(
+    // fwd = await ctx.api.forwardMessage(
+    fwd = await forwardMessageWithAutoRetry(
+      ctx.api,
       process.env.tmpchatAId!,
       sourceChatId,
       messageId

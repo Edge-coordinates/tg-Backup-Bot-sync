@@ -10,6 +10,7 @@ import {
 import { withAuth } from "../middleware/auth";
 import { buildTextGroupChainFrom } from "../utils/buildReplyGroup";
 import { Message } from "grammy/types";
+import { forwardMessageWithAutoRetry } from "../utils/safeReply";
 
 export function registerCopyReplyGroup(bot: Bot) {
   bot.command(
@@ -37,7 +38,9 @@ export async function copyReplyGroup(ctx: Context) {
   ctx.reply("开始转发");
   let fwd: Message;
   try {
-    fwd = await ctx.api.forwardMessage(
+    // fwd = await ctx.api.forwardMessage(
+    fwd = await forwardMessageWithAutoRetry(
+      ctx.api,
       process.env.tmpchatAId!,
       sourceChatId,
       messageId

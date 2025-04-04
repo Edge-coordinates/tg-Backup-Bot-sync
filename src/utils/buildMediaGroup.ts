@@ -49,6 +49,7 @@ function extractPhotoOrVideo(
 }
 
 import { getNextLink, getForwardFromID } from "./basicUtils";
+import { forwardMessageWithAutoRetry } from "./safeReply";
 
 const tmpchatId: any = process.env.tmpchatAId;
 
@@ -83,7 +84,9 @@ export async function buildMediaGroupChainFrom(
 
     let nextMsg: Message | null = null;
     try {
-      nextMsg = await ctx.api.forwardMessage(
+      // nextMsg = await ctx.api.forwardMessage(
+      nextMsg = await forwardMessageWithAutoRetry(
+        ctx.api,
         tmpchatId,
         sourceChatId,
         messageId

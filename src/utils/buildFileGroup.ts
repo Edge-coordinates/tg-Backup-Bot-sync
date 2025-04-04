@@ -6,6 +6,7 @@ import {
   getNextLink,
   getForwardFromID,
 } from "./basicUtils";
+import { forwardMessageWithAutoRetry } from "./safeReply";
 
 const tmpchatId: any = process.env.tmpchatAId;
 
@@ -66,7 +67,9 @@ export async function buildFileGroupChainFrom(
     let nextMsg: Message | null = null;
     try {
       // 尝试转发消息到临时 chat，以获取 message 内容
-      nextMsg = await ctx.api.forwardMessage(
+      // nextMsg = await ctx.api.forwardMessage(
+      nextMsg = await forwardMessageWithAutoRetry(
+        ctx.api,
         tmpchatId,
         sourceChatId,
         messageId

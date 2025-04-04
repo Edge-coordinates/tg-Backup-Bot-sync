@@ -1,6 +1,8 @@
 import { Context } from "grammy";
 import { Message } from "grammy/types";
 import { GrammyError } from "grammy";
+import { writeMessageToFile } from "./basicUtils";
+import { BasicErrorLog } from "./myLogger";
 
 export async function safeReply(ctx: Context, message: string) {
   try {
@@ -25,34 +27,33 @@ export async function forwardMessageWithAutoRetry(
   delay = 100,
   maxRetries = 3
 ): Promise<Message> {
-  try {
-    const res = await api.forwardMessage(toChatId, fromChatId, messageId);
-    await new Promise((res) => setTimeout(res, delay));
-    return res;
-  } catch (err: any) {
-    // 🧠 检查是否是 rate limit 错误
-    if (
-      err.error_code === 429 &&
-      typeof err.parameters?.retry_after === "number"
-    ) {
-      const waitTimeSec = err.parameters.retry_after;
-      // console.warn(
-      //   `⏳ 第 ${attempt} 次触发速率限制，等待 ${waitTimeSec} 秒后重试...`
-      // );
-      console.warn(
-        `触发速率限制，等待 ${waitTimeSec} 秒后重试...`
-      );
-      await new Promise((res) => setTimeout(res, waitTimeSec * 1000));
-      // continue; // 重试
-    }
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const res = await api.forwardMessage(toChatId, fromChatId, messageId);
+      await new Promise((res) => setTimeout(res, delay));
+      return res;
+    } catch (err: any) {
+      // 🧠 检查是否是 rate limit 错误
+      if (
+        err.error_code === 429 &&
+        typeof err.parameters?.retry_after === "number"
+      ) {
+        const waitTimeSec = err.parameters.retry_after;
+        // console.warn(
+        //   `⏳ 第 ${attempt} 次触发速率限制，等待 ${waitTimeSec} 秒后重试...`
+        // );
+        console.warn(`触发速率限制，等待 ${waitTimeSec} 秒后重试...`);
+        await new Promise((res) => setTimeout(res, waitTimeSec * 1000));
+        // continue; // 重试
+      }
 
-    // ❌ 其他错误：直接抛出
-    console.error(
-      `❌ forwardMessage failed: from ${fromChatId}#${messageId} → ${toChatId}`
-    );
-    throw err;
+      // ❌ 其他错误：直接抛出
+      console.error(
+        `❌ forwardMessage failed: from ${fromChatId}#${messageId} → ${toChatId}`
+      );
+      throw err;
+    }
   }
-  // for (let attempt = 1; attempt <= maxRetries; attempt++) {
-  // }
-  // throw new Error("⛔️ 超过最大重试次数，仍无法转发该消息");
+  BasicErrorLog(`forwardMessage failed: from ${fromChatId}#${messageId} → ${toChatId}`, "error-log-forwardMessage-list.txt");
+  throw new Error("⛔️ 超过最大重试次数，仍无法转发该消息");
 }

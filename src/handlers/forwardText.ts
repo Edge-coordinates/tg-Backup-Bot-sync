@@ -6,6 +6,7 @@ import {
   buildFormattedTextMessage,
 } from "../utils/basicUtils";
 import { Message } from "grammy/types";
+import { forwardMessageWithAutoRetry } from "../utils/safeReply";
 
 export function forwardHistory(bot: Bot) {
   bot.command("forward_text", async (ctx: any) => {
@@ -21,7 +22,9 @@ export function forwardHistory(bot: Bot) {
 
     let msg: Message;
     try {
-      msg = await ctx.api.forwardMessage(
+      // msg = await ctx.api.forwardMessage(
+      msg = await forwardMessageWithAutoRetry(
+        ctx.api,
         process.env.tmpchatAId!,
         sourceChatId,
         messageId

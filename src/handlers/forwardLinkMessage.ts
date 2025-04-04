@@ -1,6 +1,7 @@
 import { Bot, Context } from "grammy";
 import { Message } from "grammy/types";
 import { normalizeChatId, parseTelegramMessageLink } from "../utils/basicUtils";
+import { forwardMessageWithAutoRetry } from "../utils/safeReply";
 
 export function forwardLinkMessage(bot: Bot) {
   bot.command("forward_link", async (ctx) => {
@@ -27,7 +28,13 @@ export function forwardLinkMessage(bot: Bot) {
       // Forward the message
       let message 
       try {
-        message = await ctx.api.forwardMessage(ctx.chat.id, chatId, messageId);
+        // message = await ctx.api.forwardMessage(ctx.chat.id, chatId, messageId);
+        message = await forwardMessageWithAutoRetry(
+          ctx.api,
+          ctx.chat.id,
+          chatId,
+          messageId
+        );
       } catch (error) {
         console.error("转发消息失败:", error);
         ctx.reply("转发消息失败，请检查链接是否正确");

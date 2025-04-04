@@ -9,6 +9,7 @@ import {
 import { withAuth } from "../middleware/auth";
 import { buildFileGroupChainFrom } from "../utils/buildFileGroup";
 import { Message } from "grammy/types";
+import { forwardMessageWithAutoRetry } from "../utils/safeReply";
 
 export function registerCopyFileGroup(bot: Bot) {
   bot.command(
@@ -36,7 +37,9 @@ export async function copyFileGroup(ctx: Context) {
   ctx.reply("开始转发");
   let fwd: Message;
   try {
-    fwd = await ctx.api.forwardMessage(
+    // fwd = await ctx.api.forwardMessage(
+    fwd = await forwardMessageWithAutoRetry(
+      ctx.api,
       process.env.tmpchatAId!,
       sourceChatId,
       messageId
