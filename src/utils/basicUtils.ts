@@ -130,7 +130,8 @@ export function getForwardFromID(message: Message | any): string | null {
 export function messageMetaData(message: Message) {
   // 增加发布时间，浏览数量，reaction 等信息
   // 实际上的话，大概只需要 发布时间，浏览数量就可以了
-  const date = message.date; // 是 Unix timestamp（秒）
+  // const date = message.date; // 是 Unix timestamp（秒）
+  const date = (message as any).forward_origin.date;
   // const views = (message as any).views; // 仅限频道消息有 views 字段
 
   // console.log(message);

@@ -12,6 +12,10 @@ pm2 stop TG-BACKUP-BOT-SYNC
 pm2 start "NODE_OPTIONS='--no-deprecation' pnpm ts-node ./src/bot-local-backup.ts https://t.me/c/1672129277/1 https://t.me/c/1672129277/43889"  --name TG-BACKUP-BOT-SYNC --no-autorestart
 
 
+
+pm2 start "NODE_OPTIONS='--no-deprecation' pnpm ts-node ./src/bot-local-backup.ts https://t.me/c/1672129277/22 https://t.me/c/1672129277/43889"  --name TG-BACKUP-BOT-SYNC --no-autorestart
+
+
 ## 废弃指令
 <!-- # 可行，但是不使用 -->
 pm2 start "npm run dev" --name TG-BACKUP-BOT-SYNC
