@@ -19,6 +19,7 @@ import { buildTextGroupChainFrom } from "../utils/buildReplyGroup";
 import { withAuth } from "../middleware/auth";
 import { BasicErrorLog } from "../utils/myLogger";
 import { writeMessageToFile } from "../utils/basicUtils";
+import { safeReply } from "../utils/safeReply";
 const tmpchatId: any = process.env.tmpchatAId;
 
 export interface TextGroupResult {
@@ -64,7 +65,7 @@ export async function mainBackUpMethod(
   fromChannelID = process.env.from_channel_id;
   currentLink = startLink;
 
-  ctx.reply("开始备份！");
+  await safeReply(ctx, "开始备份！");
 
   // ANCHOR 进入 While 循环，开始转发
   while (isBackupEdn(currentLink, endLink)) {
@@ -96,7 +97,7 @@ export async function mainBackUpMethod(
     // const isFromChannel = true;
     // ANCHOR 频道消息处理
     if (isFromChannel) {
-      ctx.reply(`正在备份ChannelMSG: ${currentLink}`);
+      await safeReply(ctx, `正在备份ChannelMSG: ${currentLink}`);
       LookForReply = true;
       isPersonalMessage = false;
       await handleMessageByType(ctx, msg);
@@ -104,7 +105,7 @@ export async function mainBackUpMethod(
     } else if (LookForReply && isTargetPersonalMessage(String(fromId))) {
       console.log(`isTargetPersonalMessage: ${fromId}`);
       // ANCHOR 个人消息处理
-      ctx.reply(`正在备份PersonalMSG: ${currentLink}`);
+      await safeReply(ctx, `正在备份PersonalMSG: ${currentLink}`);
       isPersonalMessage = true;
       // await ctx.reply("👤 正在处理来自个人的连续文本...");
       await handleMessageByType(ctx, msg);
@@ -116,7 +117,7 @@ export async function mainBackUpMethod(
     }
   }
 
-  await ctx.reply("✅ 备份完成");
+  await safeReply(ctx, "✅ 备份完成");
 }
 
 // ANCHOR handleMessageByType
